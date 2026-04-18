@@ -1,0 +1,1 @@
+version: '3.8'\nservices:\n  rendercv-web:\n    build: ./backend\n    ports:\n      - "8000:8000"\n    volumes:\n      - backend:/app/backend\n    environment:\n      - PYTHONUNBUFFERED=1\n    restart: always\nvolumes:\n  backend:
